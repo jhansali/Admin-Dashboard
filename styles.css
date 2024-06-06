@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html,body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -13,6 +16,96 @@ html,body{
 .header{
     border: 1px solid blue;
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr .7fr;
+    align-items: center;
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 10px;
+}
+
+.magnify{
+    height:28px;
+    width: auto;
+    padding-left: 20px;
+}
+
+
+input{
+    width: 600px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(233, 231, 231);
+}
+
+.presence{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.bell{
+    height: 25px;
+    width: auto;
+}
+
+.profile-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username{
+    font-weight: bold;
+}
+
+.account-info{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.account-info img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-bottom: 5px;
+}
+
+.greeting-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#name{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.header-button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+button{
+    background-color: rgb(70, 162, 196);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 900;
+    height: 40px;
+    width: 80px;
 }
 
 .sidebar{
